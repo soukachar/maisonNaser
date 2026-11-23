@@ -1,0 +1,32 @@
+:root{--paper:#f8f3ea;--ink:#30261f;--wine:#56251e;--rule:#cdbfb0;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 "DM Sans",Arial,sans-serif}
+header,footer{padding:1rem 6vw;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+header{border-bottom:1px solid var(--rule)}
+.brand,h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400}
+.brand{font-size:clamp(1.4rem,3vw,2rem);text-decoration:none}
+a{color:inherit}
+nav{display:flex;align-items:center;gap:1.2rem}
+nav a{text-decoration:none}
+button{font:inherit;color:inherit;border:1px solid var(--rule);border-radius:1.5rem;padding:.2rem .9rem;background:transparent;cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 1fr;background:var(--wine);color:var(--paper)}
+.intro{align-self:center;padding:3rem 6vw}
+#category{letter-spacing:.1em}
+h1{font-size:clamp(3.5rem,7vw,7rem);line-height:1.05;margin:1.5rem 0}
+#lead{max-width:32ch;font-size:1.18rem}
+.primary,.order{display:inline-block;text-decoration:none;padding:.7rem 1.2rem}
+.primary{background:var(--paper);color:var(--wine);margin-top:1rem}
+.hero img{width:100%;height:clamp(26rem,40vw,39rem);object-fit:cover}
+#collection{padding:3rem 6vw 4rem}
+h2{font-size:clamp(2.4rem,5vw,4rem);margin:0}
+#instruction{margin:.2rem 0 2rem}
+#products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2vw}
+article img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+h3{font-size:1.65rem;margin:.8rem 0 0}
+.price{margin:.25rem 0 .75rem}
+.order{color:var(--wine);border:1px solid var(--wine)}
+.order:hover{background:var(--wine);color:white}
+footer{border-top:1px solid var(--rule);flex-wrap:wrap}
+:focus-visible{outline:3px solid #178a96;outline-offset:4px}
+@media(max-width:680px){.hero,#products{grid-template-columns:1fr}.hero img{height:17rem}.intro{padding:2rem 6vw}#products{gap:2rem}nav{gap:.7rem}header{padding-inline:4vw}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
